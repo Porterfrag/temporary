@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    body {
+      background: linear-gradient(-45deg, #667eea, #764ba2, #ff6ec4, #48c6ef);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+  <div class="text-center p-6">
+    <h1 class="text-3xl md:text-5xl font-bold text-white mb-8">Sistem Presensi Praktik Kerja Lapangan</h1>
+    <h1 class="text-3xl md:text-5xl font-bold text-white mb-8">SMK Negeri 1 Sungai Tabuk</h1>
+    <br>
+    
+    <div class="flex flex-col gap-4 w-full max-w-xs mx-auto">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLBJJcBnvQPJj888XiHZXAiL1s185hDggjy6VWStsnMiM-KA/viewform?usp=sharing&ouid=105490727843558528728" target="_blank" class="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 rounded-xl shadow-lg hover:shadow-xl transition font-semibold">
+        <i data-lucide="edit-3" class="w-5 h-5"></i> Presensi
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1PfmLpg_FKcV_NYYjEiDJ7nNyuIcS7M7q0hzk0MOT5-k/edit?usp=sharing" target="_blank" class="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 rounded-xl shadow-lg hover:shadow-xl transition font-semibold">
+        <i data-lucide="table" class="w-5 h-5"></i> Rekap Presensi
+      </a>
+      <a href="https://lookerstudio.google.com/reporting/9d2531e5-9259-4db4-bbe9-158c3b05c173" target="_blank" class="flex items-center justify-center gap-2 bg-white text-gray-800 py-3 rounded-xl shadow-lg hover:shadow-xl transition font-semibold">
+        <i data-lucide="book-open" class="w-5 h-5"></i> Rekap Jurnal
+      </a>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
